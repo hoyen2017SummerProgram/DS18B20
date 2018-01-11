@@ -1,0 +1,28 @@
+--cpu Cortex-M0
+"ds18b20_test\system_stm32f0xx.o"
+"ds18b20_test\stm32f0xx_it.o"
+"ds18b20_test\main.o"
+"ds18b20_test\stm32f0xx_hal_msp.o"
+"ds18b20_test\hwcfg.o"
+"ds18b20_test\18b20.o"
+"ds18b20_test\stm32f0xx_hal_cortex.o"
+"ds18b20_test\stm32f0xx_hal_uart.o"
+"ds18b20_test\stm32f0xx_hal_tim.o"
+"ds18b20_test\stm32f0xx_hal_flash_ex.o"
+"ds18b20_test\stm32f0xx_hal_gpio.o"
+"ds18b20_test\stm32f0xx_hal_uart_ex.o"
+"ds18b20_test\stm32f0xx_hal.o"
+"ds18b20_test\stm32f0xx_hal_flash.o"
+"ds18b20_test\stm32f0xx_hal_pwr.o"
+"ds18b20_test\stm32f0xx_hal_i2c.o"
+"ds18b20_test\stm32f0xx_hal_i2c_ex.o"
+"ds18b20_test\stm32f0xx_hal_rcc_ex.o"
+"ds18b20_test\stm32f0xx_hal_tim_ex.o"
+"ds18b20_test\stm32f0xx_hal_dma.o"
+"ds18b20_test\stm32f0xx_hal_rcc.o"
+"ds18b20_test\stm32f0xx_hal_pwr_ex.o"
+"ds18b20_test\startup_stm32f030x8.o"
+--library_type=microlib --strict --scatter "DS18B20_test\DS18B20_test.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DS18B20_test.map" -o DS18B20_test\DS18B20_test.axf
